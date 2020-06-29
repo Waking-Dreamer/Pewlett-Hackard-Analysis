@@ -25,13 +25,14 @@ This was a fairly straight forward process and no issues were encountered in the
 
 ![emp_info_retire.png](emp_info_retire.png)
 
-	One issue that arose was that the emp_info_retire table contained duplicates rows for several employees. Some employees had different job titles over the years and this table showed old titles for employees. To fix this issue, partitioning was used to clean up the data and create a new table that only displayed each employee’s current job title. The query used to complete this can be seen below:
+One issue that arose was that the emp_info_retire table contained duplicates rows for several employees. Some employees had different job titles over the years and this table showed old titles for employees. To fix this issue, partitioning was used to clean up the data and create a new table that only displayed each employee’s current job title. The query used to complete this can be seen below:
 
 ![emp_info_retire_clean.png](emp_info_retire_clean.png)
 
 The count function was then used on the new emp_info_retire_clean table to give us a total number of employees, with each title, that would be retiring in the near future. The below query was used to complete this:
 
 ![emp_info_retire_clean_group.png](emp_info_retire_clean_group.png)
+
 2B) With so many employees retiring in the near future, another question that arose was, how many employees are available to train and fill these roles that will soon be empty? To answer this, another query was run to show employees who meet mentorship eligibility based upon birth date. The query looked like:
 
 ![mentorship_eligibility.png](mentorship_eligibility.png)
