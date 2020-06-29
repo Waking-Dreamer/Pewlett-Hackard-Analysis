@@ -14,7 +14,7 @@ To address these issues, the following steps were taken:
 
 ![EmployeeDB](EmployeeDB.png)
 
-	An example of the SQL queries used to create these tables can be seen below:
+An example of the SQL queries used to create these tables can be seen below:
 
 ![schema](schema.png)
 
