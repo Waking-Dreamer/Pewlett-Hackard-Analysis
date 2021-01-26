@@ -1,4 +1,4 @@
-# Pewlett-Hackard-Analysis
+# SQL_Employee_Analysis
 
 ## Technical Report
 
