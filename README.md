@@ -23,23 +23,23 @@ This was a fairly straight forward process and no issues were encountered in the
 
 2A) Additional queries were ran that allowed us to view all employees that were of retirement age based upon the specified birth date criteria. The Emp_info_retire table was created using the below code:
 
-![emp_info_retire.png](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/emp_info_retire.png)
+![emp_info_retire](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/emp_info_retire.png)
 
 One issue that arose was that the emp_info_retire table contained duplicates rows for several employees. Some employees had different job titles over the years and this table showed old titles for employees. To fix this issue, partitioning was used to clean up the data and create a new table that only displayed each employee’s current job title. The query used to complete this can be seen below:
 
-![emp_info_retire_clean.png](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/emp_info_retire_clean.png)
+![emp_info_retire_clean](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/emp_info_retire_clean.png)
 
 The count function was then used on the new emp_info_retire_clean table to give us a total number of employees, with each title, that would be retiring in the near future. The below query was used to complete this:
 
-![emp_info_retire_clean_group.png](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/emp_info_retire_clean_group.png)
+![emp_info_retire_clean_group](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/emp_info_retire_clean_group.png)
 
 2B) With so many employees retiring in the near future, another question that arose was, how many employees are available to train and fill these roles that will soon be empty? To answer this, another query was run to show employees who meet mentorship eligibility based upon birth date. The query looked like:
 
-![mentorship_eligibility.png](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/mentorship_eligibility.png)
+![mentorship_eligibility](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/mentorship_eligibility.png)
 
 The same issue of having some employees listed more than once, because of having different titles, was also experienced with the mentorship_eligibility table. The data also needed to be cleaned using partitioning and the below query was used to complete this:
 
-![mentorship_eligibility_clean.png](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/mentorship_eligibility_clean.png)
+![mentorship_eligibility_clean](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Images/mentorship_eligibility_clean.png)
 
 *All queries can be found [Here](https://github.com/Waking-Dreamer/Pewlett-Hackard-Analysis/tree/master/Queries/challenge_queries.sql)
 
